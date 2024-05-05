@@ -22,6 +22,16 @@ class MainActivity : AppCompatActivity() {
         openNewPage()
         changeImage()
         //displayStudentName()
+        openWebViewActivity()
+    }
+
+
+    private fun openWebViewActivity(){
+        val button : Button = findViewById(R.id.open_webview_btn)
+        button.setOnClickListener {
+            val intent = Intent(this,WebViewActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun changeImage(){
