@@ -9,6 +9,12 @@
     android:padding="10dp"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/student_img"
+        android:src="@drawable/home"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
    <TextView
        android:id="@+id/student_name_tv"
        android:textSize="30sp"
@@ -18,12 +24,14 @@
 
     <EditText
         android:id="@+id/student_name_ed"
+        android:inputType="textPersonName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/display_btn"
         android:text="Display name"
+        android:textAllCaps="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
