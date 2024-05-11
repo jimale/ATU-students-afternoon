@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         changeImage()
         //displayStudentName()
         openWebViewActivity()
+        openSharedPreferencesActivity()
     }
 
 
@@ -30,6 +31,14 @@ class MainActivity : AppCompatActivity() {
         val button : Button = findViewById(R.id.open_webview_btn)
         button.setOnClickListener {
             val intent = Intent(this,WebViewActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun openSharedPreferencesActivity(){
+        val button : Button = findViewById(R.id.open_sharedPref_btn)
+        button.setOnClickListener {
+            val intent = Intent(this,SharedPreferencesActivity::class.java)
             startActivity(intent)
         }
     }
