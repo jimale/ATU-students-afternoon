@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         //displayStudentName()
         openWebViewActivity()
         openSharedPreferencesActivity()
+        openDatabaseActivity()
     }
 
 
@@ -39,6 +40,14 @@ class MainActivity : AppCompatActivity() {
         val button : Button = findViewById(R.id.open_sharedPref_btn)
         button.setOnClickListener {
             val intent = Intent(this,SharedPreferencesActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun openDatabaseActivity(){
+        val button : Button = findViewById(R.id.open_database_btn)
+        button.setOnClickListener {
+            val intent = Intent(this,DatabaseActivityActivity::class.java)
             startActivity(intent)
         }
     }

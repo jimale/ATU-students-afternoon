@@ -16,6 +16,9 @@
         android:theme="@style/Theme.ATUStudentsAfternoon"
         tools:targetApi="31">
         <activity
+            android:name=".DatabaseActivityActivity"
+            android:exported="false" />
+        <activity
             android:name=".SharedPreferencesActivity"
             android:exported="false" />
         <activity

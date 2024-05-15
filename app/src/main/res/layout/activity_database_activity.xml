@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DatabaseActivityActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student name"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/student_name_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student email"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/student_email_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student age"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/student_age_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/save_student_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE" />
+    <Button
+        android:id="@+id/display_student_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Display" />
+
+    <TextView
+        android:id="@+id/display_student_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        android:textSize="30sp" />
+
+</LinearLayout>
