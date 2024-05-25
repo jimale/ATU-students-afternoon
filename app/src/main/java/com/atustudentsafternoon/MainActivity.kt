@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
     private fun openDatabaseActivity(){
         val button : Button = findViewById(R.id.open_database_btn)
         button.setOnClickListener {
-            val intent = Intent(this,DatabaseActivityActivity::class.java)
+            val intent = Intent(this,StudentsListActivity::class.java)
             startActivity(intent)
         }
     }

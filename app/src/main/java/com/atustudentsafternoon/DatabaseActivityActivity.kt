@@ -18,7 +18,7 @@ class DatabaseActivityActivity : AppCompatActivity() {
         val saveStudentButton: Button = findViewById(R.id.save_student_btn)
         val displaytudentButton: Button = findViewById(R.id.display_student_btn)
         saveStudentButton.setOnClickListener {
-            Thread{
+            Thread {
                 saveStudent()
             }.start()
         }
@@ -32,18 +32,21 @@ class DatabaseActivityActivity : AppCompatActivity() {
         val database = Room.databaseBuilder(
             applicationContext,
             MyDatabase::class.java, "my_db"
-        ).build()
+        )
+            .fallbackToDestructiveMigration()
+            .build()
 
         val studentName: EditText = findViewById(R.id.student_name_edt)
         val studentEmail: EditText = findViewById(R.id.student_email_et)
         val studentAge: EditText = findViewById(R.id.student_age_et)
+        val studentPhone: EditText = findViewById(R.id.student_phone_et)
 
         //Student entity or student table
         val student = Student(
-            id = 1,
             name = studentName.text.toString(),
             email = studentEmail.text.toString(),
-            age = studentAge.text.toString().toInt()
+            age = studentAge.text.toString().toInt(),
+            phoneNumber = studentPhone.text.toString().toInt()
         )
 
         //Save student info
@@ -51,13 +54,15 @@ class DatabaseActivityActivity : AppCompatActivity() {
 
     }
 
-    private fun displayStudent(){
-        Thread{
+    private fun displayStudent() {
+        Thread {
 
             val database = Room.databaseBuilder(
                 applicationContext,
                 MyDatabase::class.java, "my_db"
-            ).build()
+            )
+                .fallbackToDestructiveMigration()
+                .build()
 
             //Declare views
             val textView: TextView = findViewById(R.id.display_student_tv)
