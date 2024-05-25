@@ -10,6 +10,8 @@ interface StudentDAO {
     @Query("SELECT * from student")
     fun getStudents(): List<Student>
 
+    @Query("SELECT * FROM student where id =:studentId")
+    fun getStudentById(studentId: Int): Student
     @Insert
     fun saveStudent(student: Student)
 }

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Student name"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/student_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/green"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Student email"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/student_email_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/green"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Student phone number"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/student_phone_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/green"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Student age"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/student_age_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/green"
+        android:textSize="20sp" />
+
+</LinearLayout>
